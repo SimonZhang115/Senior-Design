@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditCourseActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/actionModeCloseDrawable"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="Edit Course"
+            android:textSize="20dp"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/ID"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:hint="ID"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:hint="name"
+        android:focusableInTouchMode="false" />
+
+    <EditText
+        android:id="@+id/classroom"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="20dp"
+        android:hint="classroom"
+        android:focusableInTouchMode="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp">
+
+        <CheckBox
+            android:id="@+id/monCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+
+        <CheckBox
+            android:id="@+id/tueCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Tue"/>
+
+        <CheckBox
+            android:id="@+id/wedCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Wed"/>
+
+        <CheckBox
+            android:id="@+id/thuCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Thu"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <CheckBox
+            android:id="@+id/friCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Fri"/>
+
+        <CheckBox
+            android:id="@+id/satCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Sat"/>
+
+        <CheckBox
+            android:id="@+id/sunCheckBox"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Sun"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/fromTime"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:focusableInTouchMode="false"
+            android:hint="time from"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text=" - "/>
+
+        <EditText
+            android:id="@+id/toTime"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:textSize="20dp"
+            android:focusableInTouchMode="false"
+            android:hint="time to"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="50dp"
+        android:text="OK"
+        android:onClick="editCourse"/>
+
+</LinearLayout>
